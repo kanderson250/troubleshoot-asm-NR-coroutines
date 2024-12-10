@@ -1,2 +1,2 @@
-rootProject.name = "minimal-coroutines-repro"
+rootProject.name = "troubleshoot-asm-NR-coroutines"
 

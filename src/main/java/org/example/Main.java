@@ -5,11 +5,12 @@ import org.objectweb.asm.ClassWriter;
 
 public class Main {
     public static void main(String[] args) {
-        byte[] dump = new byte[0];
+        byte[] dump;
         try {
-            dump = GenerateInvokeSuspends.dump();
+            dump = UseSuspendDump.dump();
         } catch (Exception e) {
             e.printStackTrace();
+            throw new RuntimeException("Error generating class file dump");
         }
         ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
         ClassReader cr = new ClassReader(dump);

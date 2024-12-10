@@ -11,7 +11,7 @@ import org.objectweb.asm.RecordComponentVisitor;
 /***
  * Output of ASMifier on New Relic weaver + a coroutine using a suspend function
  */
-public class GenerateInvokeSuspends implements Opcodes {
+public class UseSuspendDump implements Opcodes {
 
     public static byte[] dump () throws Exception {
 
